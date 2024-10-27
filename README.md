@@ -102,6 +102,12 @@ Este controlador gestiona las operaciones relacionadas con los métodos de pago.
 This controller manages product-related operations.
 
 #### Endpoints
+- **POST /products/getListFast**
+  - Retrieves a fake list very quickly, 
+ideal for front-end development, 
+as it does not take time to fetch 
+from the database but instead sends 
+a hardcoded fake list.
 - **POST /products/create**
   - Creates a new product.
 - **POST /products/getListFast**
@@ -123,6 +129,12 @@ This controller manages product-related operations.
 Este controlador gestiona las operaciones relacionadas con los productos.
 
 #### Puntos de entrada
+- **POST /products/getListFast**
+  - Obtiene una lista falsa muy rápido, 
+ideal como para el desarrollo front, 
+porque no demora en fetchear, al no 
+buscar en la Base de Datos, si no enviar
+una lista falsa Hard codeada.
 - **POST /products/create**
   - Crea un nuevo producto.
 - **POST /products/getListFast**
