@@ -1,11 +1,22 @@
 # PrivatePOSBack
+
+## Description/Descripción
+
+### English
+The present repository is the back end of a POS 
+(Point of Sale) application. It is essentially 
+the cash register application, so to speak. 
+All documentation will be in English and Spanish. 
+More endpoints can be created as needed.
+
+
+### Spanish
 El presente repositorio es el back end de una 
 aplicación POS (Point of sale. Punto de venta). 
 Es la apliación de la caja registradora, por 
 así decirlo. Toda la documentación estará en 
 inglés y castellano. Se pueden crear más 
 endpoints a medida que se van necesitando.
-
 
 ## CustomerController
 
