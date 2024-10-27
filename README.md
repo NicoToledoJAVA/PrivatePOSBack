@@ -1,11 +1,14 @@
-# CustomerController
+# PrivatePOSBack
 
-## English
 
-### Description
+## CustomerController
+
+### English
+
+#### Description
 This controller manages customer-related operations.
 
-### Endpoints
+#### Endpoints
 - **GET /customers**
   - Retrieves all customers.
 - **GET /customers/{id}**
@@ -17,12 +20,12 @@ This controller manages customer-related operations.
 - **DELETE /customers/{id}**
   - Deletes a customer by ID.
 
-## Spanish
+### Spanish
 
-### Descripción
+#### Descripción
 Este controlador gestiona las operaciones relacionadas con los clientes.
 
-### Puntos de entrada
+#### Puntos de entrada
 - **GET /customers**
   - Recupera todos los clientes.
 - **GET /customers/{id}**
@@ -36,14 +39,14 @@ Este controlador gestiona las operaciones relacionadas con los clientes.
 
 ---
 
-# PaymentTypeController
+## PaymentTypeController
 
-## English
+### English
 
-### Description
+#### Description
 This controller manages payment method-related operations.
 
-### Endpoints
+#### Endpoints
 - **GET /paymenttypes**
   - Retrieves all payment methods.
 - **GET /paymenttypes/{id}**
@@ -55,12 +58,12 @@ This controller manages payment method-related operations.
 - **DELETE /paymenttypes/{id}**
   - Deletes a payment method by ID.
 
-## Spanish
+### Spanish
 
-### Descripción
+#### Descripción
 Este controlador gestiona las operaciones relacionadas con los métodos de pago.
 
-### Puntos de entrada
+#### Puntos de entrada
 - **GET /paymenttypes**
   - Recupera todos los métodos de pago.
 - **GET /paymenttypes/{id}**
@@ -74,14 +77,14 @@ Este controlador gestiona las operaciones relacionadas con los métodos de pago.
 
 ---
 
-# ProductController
+## ProductController
 
-## English
+### English
 
-### Description
+#### Description
 This controller manages product-related operations.
 
-### Endpoints
+#### Endpoints
 - **POST /products/create**
   - Creates a new product.
 - **POST /products/getListFast**
@@ -97,12 +100,12 @@ This controller manages product-related operations.
 - **POST /products/borrar**
   - Deletes products with IDs greater than 520.
 
-## Spanish
+### Spanish
 
-### Descripción
+#### Descripción
 Este controlador gestiona las operaciones relacionadas con los productos.
 
-### Puntos de entrada
+#### Puntos de entrada
 - **POST /products/create**
   - Crea un nuevo producto.
 - **POST /products/getListFast**
@@ -120,14 +123,14 @@ Este controlador gestiona las operaciones relacionadas con los productos.
 
 ---
 
-# SalesController
+## SalesController
 
-## English
+### English
 
-### Description
+#### Description
 This controller manages sales-related operations.
 
-### Endpoints
+#### Endpoints
 - **GET /sales**
   - Retrieves all sales.
 - **GET /sales/{id}**
@@ -139,12 +142,12 @@ This controller manages sales-related operations.
 - **DELETE /sales/{id}**
   - Deletes a sale by ID.
 
-## Spanish
+### Spanish
 
-### Descripción
+#### Descripción
 Este controlador gestiona las operaciones relacionadas con las ventas.
 
-### Puntos de entrada
+#### Puntos de entrada
 - **GET /sales**
   - Recupera todas las ventas.
 - **GET /sales/{id}**
