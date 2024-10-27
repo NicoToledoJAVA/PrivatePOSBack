@@ -1,4 +1,5 @@
 # PrivatePOSBack
+	El presente repositorio es el back end de una aplicación POS (Point of sale. Punto de venta). Es la apliación de la caja registradora, por así decirlo. Toda la documentación estará en inglés y castellano. Se pueden crear más endpoints a medida que se van necesitando.
 
 
 ## CustomerController
