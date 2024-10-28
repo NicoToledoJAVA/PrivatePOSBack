@@ -21,22 +21,22 @@ public class PaymentTypeController {
         return paymentMethodService.getAllPaymentMethods();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/get/{id}")
     public Optional<PaymentMethod> getPaymentMethodById(@PathVariable Long id) {
         return paymentMethodService.getPaymentMethodById(id);
     }
 
-    @PostMapping("")
+    @PostMapping("/create")
     public PaymentMethod createPaymentMethod(@RequestBody PaymentMethod paymentMethod) {
         return paymentMethodService.createPaymentMethod(paymentMethod);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/modify/{id}")
     public PaymentMethod updatePaymentMethod(@PathVariable Long id, @RequestBody PaymentMethod updatedPaymentMethod) {
         return paymentMethodService.updatePaymentMethod(id, updatedPaymentMethod);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public void deletePaymentMethod(@PathVariable Long id) {
         paymentMethodService.deletePaymentMethod(id);
     }

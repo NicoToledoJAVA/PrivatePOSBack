@@ -22,12 +22,12 @@ public class CustomerController {
         return customerService.getAllCustomers();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/get/{id}")
     public Optional<Customer> getCustomerById(@PathVariable Long id) {
         return customerService.getCustomerById(id);
     }
 
-    @PostMapping("")
+    @PostMapping("/create")
     public Customer createCustomer(@RequestBody Customer customer) {
         return customerService.createCustomer(customer);
     }

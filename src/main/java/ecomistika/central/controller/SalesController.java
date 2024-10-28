@@ -31,7 +31,7 @@ public class SalesController {
         return saleService.createSale(sale);
     }
 
-    @PutMapping("")
+    @PutMapping("/modify")
     public Sale updateSale(@RequestBody Sale sale) {
         Long id = sale.getId();
         return saleService.updateSale(id, sale);

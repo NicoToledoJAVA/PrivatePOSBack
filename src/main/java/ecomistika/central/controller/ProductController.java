@@ -169,7 +169,7 @@ public class ProductController {
         }
     }
 
-    @PostMapping("/borrar")
+    @PostMapping("/deleteAll")
     public String corregir() {
         List<Product> listaProductos = productService.getProducts();
         int borrado = 0;
