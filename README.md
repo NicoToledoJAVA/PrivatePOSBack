@@ -19,11 +19,11 @@ inglés y castellano. Se pueden crear más
 endpoints a medida que se van necesitando.
 
 ## Index / Índice
-1. [Category](#category)
-2. [Company](#company)
-3. [Customer](#customer)
+*. [Category](#category)
+*. [Company](#company)
+1. [Customer](#customer)
+2. [PaymentTypeController](#paymentTypeController)
 4. [Owner](#owner)
-5. [PaymentMethod](#paymentmethod)
 6. [Product](#product)
 7. [Sale](#sale)
 8. [SaleItem](#saleitem)
@@ -39,6 +39,7 @@ endpoints a medida que se van necesitando.
 
 ### Customer
 **Table**: `customers`
+
 #### Description
 This controller manages customer-related operations.
 
@@ -73,22 +74,22 @@ The `Customer` entity contains client data, including personal information and c
 ### Spanish
 
 ### Customer
-**Tabla**: customers
+**Tabla**: `customers`
 
 #### Descripción
 Este controlador gestiona las operaciones relacionadas con los clientes.
-La entidad Customer contiene datos del cliente, incluyendo información personal y detalles de contacto.
+La entidad `Customer` contiene datos del cliente, incluyendo información personal y detalles de contacto.
 
 - **Atributos**:
-  - id: Identificador único.
-  - firstName, lastName: Nombre y apellido.
-  - address, streetName, postalCode, city: Dirección y ubicación.
-  - email, phoneNumber: Contacto.
-  - isEnabled: Estado de habilitación del cliente.
-  - idNumber, taxNumber: Identificaciones fiscales.
+  - `id:` Identificador único.
+  - `firstName, lastName:` Nombre y apellido.
+  - `address, streetName, postalCode, city:` Dirección y ubicación.
+  - `email, phoneNumber:` Contacto.
+  - `isEnabled:` Estado de habilitación del cliente.
+  - `idNumber, taxNumber:` Identificaciones fiscales.
 - **Relaciones**:
-  - List<Sale> sales: Relación uno-a-muchos con Sale.
-  - Owner owner: Relación muchos-a-uno con Owner, que indica el dueño del cliente en el sistema.
+  - `List<Sale> sales:` Relación uno-a-muchos con `Sale`.
+  - `Owner owner:` Relación muchos-a-uno con Owner, que indica el dueño del cliente en el sistema.
 
 
 #### Puntos de entrada
@@ -108,6 +109,24 @@ La entidad Customer contiene datos del cliente, incluyendo información personal
 ## PaymentTypeController
 
 ### English
+### PaymentMethod
+**Table**: `payment_methods`
+
+Defines the payment methods accepted by the company (cash, card, etc.).
+
+- **Attributes**:
+  - `id`: Unique identifier.
+  - `name`: Name of the payment method.
+  - `code`: Optional code.
+  - `shortcutKey`: Shortcut key.
+  - `ordinal`: Priority within the payment system.
+  - `isEnabled`: Indicates if the payment method is enabled.
+- **Relationships**:
+  - `Owner owner`: Many-to-one relationship with `Owner`.
+
+---
+
+
 
 #### Description
 This controller manages payment method-related operations.
@@ -125,9 +144,25 @@ This controller manages payment method-related operations.
   - Deletes a payment method by ID.
 
 ### Spanish
+### PaymentMethod
+**Tabla**: `payment_methods`
 
 #### Descripción
-Este controlador gestiona las operaciones relacionadas con los métodos de pago.
+Define los métodos de pago que la empresa acepta (efectivo, tarjeta, etc.).
+
+- **Atributos**:
+  - `id`: Identificador único.
+  - `name`: Nombre del método de pago.
+  - `code`: Código opcional.
+  - `shortcutKey`: Tecla de acceso directo.
+  - `ordinal`: Prioridad en el sistema de pagos.
+  - `isEnabled`: Estado de habilitación.
+- **Relaciones**:
+  - `Owner owner`: Relación muchos-a-uno con `Owner`.
+
+---
+
+
 
 #### Puntos de entrada
 - **GET /paymenttypes**
