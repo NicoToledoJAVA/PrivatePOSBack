@@ -279,8 +279,26 @@ una lista falsa Hard codeada.
 
 ### English
 
+### Sales
+**Table**: `sales`
+
 #### Description
 This controller manages sales-related operations.
+The `Sale` entity represents a complete sales transaction.
+
+- **Attributes**:
+  - `id`: Unique identifier.
+  - `sale_number`: Sale number.
+  - `status`: Sale status.
+  - `totalAmount`: Total amount.
+- **Relationships**:
+  - `List<SaleItem> saleItems`: One-to-many relationship with `SaleItem`.
+  - `Customer customer`: Many-to-one relationship with `Customer`.
+  - `User seller`: Many-to-one relationship with `User`.
+  - `Owner owner`: Many-to-one relationship with `Owner`.
+
+---
+
 
 #### Endpoints
 - **GET /sales**
@@ -296,8 +314,27 @@ This controller manages sales-related operations.
 
 ### Spanish
 
+### Ventas
+**Tabla**: `sales`
+
 #### Descripción
-Este controlador gestiona las operaciones relacionadas con las ventas.
+Este controlador gestiona las operaciones relacionadas con las `ventas`.
+La entidad `Sale` representa una transacción de venta completa.
+
+- **Atributos**:
+  - `id`: Identificador único.
+  - `sale_number`: Número de la venta.
+  - `status`: Estado de la venta.
+  - `totalAmount`: Importe total.
+- **Relaciones**:
+  - `List<SaleItem> saleItems`: Relación uno-a-muchos con `SaleItem`.
+  - `Customer customer`: Relación muchos-a-uno con `Customer`.
+  - `User seller`: Relación muchos-a-uno con `User`.
+  - `Owner owner`: Relación muchos-a-uno con `Owner`.
+
+---
+
+
 
 #### Puntos de entrada
 - **GET /sales**
