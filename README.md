@@ -21,8 +21,8 @@ endpoints a medida que se van necesitando.
 ## Index / Índice
 *. [Category](#category)
 *. [Company](#company)
-1. [Customer](#customer)
-2. [PaymentTypeController](#paymentTypeController)
+1. [Customer / Cliente](#customerController)
+2. [Payment Type / Método de Pago](#paymentTypeController)
 4. [Owner](#owner)
 6. [Product](#product)
 7. [Sale](#sale)
@@ -73,7 +73,7 @@ The `Customer` entity contains client data, including personal information and c
 
 ### Spanish
 
-### Customer
+### Cliente
 **Tabla**: `customers`
 
 #### Descripción
@@ -109,7 +109,7 @@ La entidad `Customer` contiene datos del cliente, incluyendo información person
 ## PaymentTypeController
 
 ### English
-### PaymentMethod
+### Payment Method
 **Table**: `payment_methods`
 
 Defines the payment methods accepted by the company (cash, card, etc.).
@@ -144,7 +144,8 @@ This controller manages payment method-related operations.
   - Deletes a payment method by ID.
 
 ### Spanish
-### PaymentMethod
+
+### Método de Pago
 **Tabla**: `payment_methods`
 
 #### Descripción
