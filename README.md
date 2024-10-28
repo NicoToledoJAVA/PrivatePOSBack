@@ -19,19 +19,10 @@ inglés y castellano. Se pueden crear más
 endpoints a medida que se van necesitando.
 
 ## Index / Índice
-*. [Category](#category)
-*. [Company](#company)
 1. [Customer / Cliente](#customerController)
 2. [Payment Type / Método de Pago](#paymentTypeController)
 3. [Products / Productos](#productController)
-
-4. [Owner](#owner)
-
-7. [Sale](#sale)
-8. [SaleItem](#saleitem)
-9. [Stock](#stock)
-10. [Tax](#tax)
-11. [User](#user)
+4. [Sales / Ventas](#salesController)
 
 
 ## CustomerController
