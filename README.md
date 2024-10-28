@@ -145,7 +145,7 @@ This controller manages payment method-related operations.
 
 ### Spanish
 
-### Método de Pago
+### Métodos de Pago
 **Tabla**: `payment_methods`
 
 #### Descripción
@@ -183,8 +183,25 @@ Define los métodos de pago que la empresa acepta (efectivo, tarjeta, etc.).
 
 ### English
 
+### Products
+**Table**: `products`
+
 #### Description
-This controller manages product-related operations.
+This controller manages operations related to `products`.
+The `Product` entity represents the products the company sells.
+
+- **Attributes**:
+  - `id_product`: Unique identifier.
+  - `product_number`, `codeBar`: Product number and barcode.
+  - `name`, `description`: Name and description.
+  - `cost`, `price`, `profit_margin`: Cost, price, and profit margin.
+- **Relationships**:
+  - `Category category`: Many-to-one relationship with `Category`.
+  - `Company company`: Many-to-one relationship with `Company`.
+  - `Stock stock`: One-to-one relationship with `Stock`.
+  - `Owner owner`: Many-to-one relationship with `Owner`.
+
+---
 
 #### Endpoints
 - **POST /products/getListFast**
@@ -210,8 +227,27 @@ a hardcoded fake list.
 
 ### Spanish
 
+### Productos
+**Tabla**: `products`
+
 #### Descripción
-Este controlador gestiona las operaciones relacionadas con los productos.
+Este controlador gestiona las operaciones relacionadas con los `productos`.
+La entidad `Product` representa los productos que la empresa vende.
+
+- **Atributos**:
+  - `id_product`: Identificador único.
+  - `product_number`, `codeBar`: Código de barras y número de producto.
+  - `name`, `description`: Nombre y descripción.
+  - `cost`, `price`, `profit_margin`: Costo, precio y margen de beneficio.
+- **Relaciones**:
+  - `Category category`: Relación muchos-a-uno con `Category`.
+  - `Company company`: Relación muchos-a-uno con `Company`.
+  - `Stock stock`: Relación uno-a-uno con `Stock`.
+  - `Owner owner`: Relación muchos-a-uno con `Owner`.
+
+---
+
+
 
 #### Puntos de entrada
 - **POST /products/getListFast**
