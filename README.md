@@ -9,7 +9,7 @@ the cash register application, so to speak.
 All documentation will be in English and Spanish. 
 More endpoints can be created as needed.
 
-### Español
+### Castellano
 El presente repositorio es el back end de una 
 aplicación POS (Point of sale, Punto de venta). 
 Es la aplicación de la caja registradora, por 
