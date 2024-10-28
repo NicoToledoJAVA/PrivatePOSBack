@@ -42,7 +42,4 @@ public class SalesController {
         saleService.deleteSale(id);
     }
 
-    // Otros puntos finales según sea necesario
-    // ...
-    
 }

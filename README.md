@@ -18,12 +18,45 @@ así decirlo. Toda la documentación estará en
 inglés y castellano. Se pueden crear más 
 endpoints a medida que se van necesitando.
 
+## Index / Índice
+1. [Category](#category)
+2. [Company](#company)
+3. [Customer](#customer)
+4. [Owner](#owner)
+5. [PaymentMethod](#paymentmethod)
+6. [Product](#product)
+7. [Sale](#sale)
+8. [SaleItem](#saleitem)
+9. [Stock](#stock)
+10. [Tax](#tax)
+11. [User](#user)
+
+
 ## CustomerController
 
 ### English
 
+
+### Customer
+**Table**: `customers`
 #### Description
 This controller manages customer-related operations.
+
+
+The `Customer` entity contains client data, including personal information and contact details.
+
+- **Attributes**:
+  - `id`: Unique identifier.
+  - `firstName`, `lastName`: First name and last name.
+  - `address`, `streetName`, `postalCode`, `city`: Address and location details.
+  - `email`, `phoneNumber`: Contact information.
+  - `isEnabled`: Indicates if the customer is enabled.
+  - `idNumber`, `taxNumber`: Tax identification numbers.
+- **Relationships**:
+  - `List<Sale> sales`: One-to-many relationship with `Sale`.
+  - `Owner owner`: Many-to-one relationship with `Owner`, indicating the owner of the customer in the system.
+
+---
 
 #### Endpoints
 - **GET /customers**
@@ -39,8 +72,24 @@ This controller manages customer-related operations.
 
 ### Spanish
 
+### Customer
+**Tabla**: customers
+
 #### Descripción
 Este controlador gestiona las operaciones relacionadas con los clientes.
+La entidad Customer contiene datos del cliente, incluyendo información personal y detalles de contacto.
+
+- **Atributos**:
+  - id: Identificador único.
+  - firstName, lastName: Nombre y apellido.
+  - address, streetName, postalCode, city: Dirección y ubicación.
+  - email, phoneNumber: Contacto.
+  - isEnabled: Estado de habilitación del cliente.
+  - idNumber, taxNumber: Identificaciones fiscales.
+- **Relaciones**:
+  - List<Sale> sales: Relación uno-a-muchos con Sale.
+  - Owner owner: Relación muchos-a-uno con Owner, que indica el dueño del cliente en el sistema.
+
 
 #### Puntos de entrada
 - **GET /customers**
