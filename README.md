@@ -23,8 +23,10 @@ endpoints a medida que se van necesitando.
 *. [Company](#company)
 1. [Customer / Cliente](#customerController)
 2. [Payment Type / Método de Pago](#paymentTypeController)
+3. [Products / Productos](#productController)
+
 4. [Owner](#owner)
-6. [Product](#product)
+
 7. [Sale](#sale)
 8. [SaleItem](#saleitem)
 9. [Stock](#stock)
